@@ -58,7 +58,7 @@ anchorcolor = black]{hyperref}
 
 \begin{document}
 
-\title{PhD seminar in environmental economics and data science\\(EC 607)}
+\title{Environmental economics and data science \\(EC 607)}
 \subtitle{\textsc{Winter 2019 syllabus}\vspace{-2ex}}
 \author{Grant R. McDermott\\ Dept. of Economics, University of Oregon}
 %\date{}  % Toggle commenting to test
@@ -69,12 +69,13 @@ anchorcolor = black]{hyperref}
 \section*{Summary}
 
 \begin{tabular}{ll} 
-	\textbf{When:} & Mon \& Wed, 14:00--15:50\\
-	\textbf{Where:} & PLC 410\\
+	\textbf{When:} & Mon \& Wed, 14:00--15:50 \\
+	\textbf{Where:} & PLC 410 \\
+	\textbf{Web:} & \href{https://github.com/uo-ec607}{https://github.com/uo-ec607} \\
 	\textbf{Who:} & Grant McDermott \\
 	& \, \faMortarBoard \, Assistant Professor of Economics \\
 	& \, \faEnvelopeO \, \href{mailto:grantmcd@uoregon.edu}{grantmcd@uoregon.edu} \\
-	& \, \faHourglassHalf \, Tue \& Thu, 09:00--10:00 (PLC 530)
+	& \, \faHourglassHalf \, Tue \& Thu, 09:00--10:00 (PLC 530) \\
 \end{tabular} 
 
 \section*{Course description}
@@ -89,9 +90,9 @@ This seminar is targeted at economics PhD students and will introduce you to adv
 
 Please bring your laptops to class. This will be a very hands-on course, with relatively little in the way of formal theory. Instead, we'll be working through lecture notes together in class and you'll be running code on your own machines. 
 
-\subsection*{Software and tools}
+\subsection*{Software requirements}
 
-Below follows a brief description of the software requirements for this course. We will only be using free and/or open-source tools. Please aim to have everything installed by the start of our first lecture. I will be available for installation troubleshooting during the first week of the quarter. If you want a detailed tutorial on how to achieve a perfect working setup, I can think of no finer guide than Jenny Bryan \textit{et al}.'s \url{http://happygitwithr.com/} (see sections 4 -- 15).
+All of the software requirements for this course are open-source and/or free. Please aim to have everything installed by the start of our first lecture. I will be available for installation troubleshooting during the first week of the quarter. If you want a detailed tutorial on how to achieve a perfect working setup, I can think of no finer guide than Jenny Bryan \textit{et al}.'s \url{http://happygitwithr.com/} (see esp. sections 4 -- 15).
 
 \vspace{-0.25cm}
 \subsubsection*{\textit{R} and RStudio}
@@ -102,8 +103,9 @@ Please make sure that you install the \textbf{RStudio IDE} too (download \href{h
 \vspace{-0.25cm}
 \subsubsection*{Git and GitHub Classroom}
 
-We will also make extensive use of the \textbf{git} version control system (download \href{https://git-scm.com/downloads}{here}\footnote{Windows users, please make sure that you download \href{https://gitforwindows.org/}{Git for Windows} since that will come with Git Bash, which you'll need elsewhere in the course. More information \href{http://happygitwithr.com/install-git.html\#install-git-windows}{here}.}). %I'll go through detailed setup procedures during class. Before that, however, p
-Once you have installed git, please create an account on \textbf{GitHub} and make sure to register as a student --- use your \textit{username}@uoregon.edu email account --- so that you get access to free private repos (see \href{https://education.github.com/discount_requests/new}{here}). Now is probably a good time to tell you that I am going to run the entire course through \href{https://classroom.github.com/}{GitHub Classroom}. You will receive an email invitation to the course repo with instructions in due time, but suffice it to say that this is how we'll disseminate lecture material, submit assignments, provide feedback, receive grades, etc.
+We will also make extensive use of the \textbf{git} version control system (download \href{https://git-scm.com/downloads}{here}\footnote{Windows users, please make sure that you download \href{https://gitforwindows.org/}{Git for Windows} since that will come with Git Bash, which you'll need elsewhere in the course. More information \href{http://happygitwithr.com/install-git.html\#install-git-windows}{here}.}). Once you have installed git, please create an account on \textbf{GitHub} (\href{https://github.com/join}{here})% and make sure to register as a student --- use your \textit{username}@uoregon.edu email account --- so that you get access to free private repos (see \href{https://education.github.com/discount_requests/new}{here})
+%% No longer required: https://blog.github.com/changelog/2019-01-08-pricing-changes/
+. Now is probably a good time to tell you that I am going to run the entire course through \href{https://classroom.github.com/}{GitHub Classroom}. You will receive an email invitation to the course repo with instructions in due time, but suffice it to say that this is how we'll submit assignments, provide feedback, receive grades, etc.
 
 \vspace{-0.25cm}
 \subsubsection*{Other}
@@ -176,7 +178,7 @@ If you have a documented disability and anticipate needing accommodations in thi
 \subsection*{Data science basics}
 
 \begin{enumerate}
-	\item Introduction and software troubleshooting
+	\item Introduction: Motivation, software installation, and data visualization
 	\item Version control with Git(Hub)
 	\item Learning to love the shell
 	\item \textit{R} language basics
@@ -205,7 +207,7 @@ If you have a documented disability and anticipate needing accommodations in thi
 %		\item ``\href{http://ropenscilabs.github.io/r-docker-tutorial/}{\textit{R docker tutorial}}'' (rOpenSci Labs); ``\href{http://seankross.com/2017/09/17/Enough-Docker-to-be-Dangerous.html}{Enough Docker to be dangerous}'' (Sean Kross)
 %	\end{itemize}
 	\item Virtual machines / cloud servers (Google Compute Engine)
-	\item High performance computing (Talapas cluster) 
+	\item High performance computing (UO Talapas cluster) 
 	\item Databases: SQL(ite) and BigQuery
 	\item Spark
 	\item Machine learning: (1)
@@ -217,7 +219,11 @@ If you have a documented disability and anticipate needing accommodations in thi
 \section*{FAQ}
 
 \vspace{-0.25cm}
-\subsubsection*{The other data science courses that I've seen all have at least one lecture dedicated to data visualization. Where's yours?}
+\subsubsection*{This course looks interesting! Can I use/adapt your lecture notes for a similar course that I'm teaching at XYZ?}
+Sure. I've benefited greatly from other people making their teaching materials publicly available (and have tried my best to acknowledge them directly in the relevant sections of this course). Say nothing of the incredible open-source software that powers everything. I'm more than happy to pay it forward. I only ask two favours. 1) Please let me know (\href{mailto:grantmcd@uoregon.edu}{email}/\href{https://twitter.com/grant_mcdermott}{Twitter}) if you do use material from this course, or have found it useful in other ways. 2) A minor acknowledgment somewhere in your own syllabus or notes would be much appreciated.
+
+\vspace{-0.25cm}
+\subsubsection*{The other data science courses that I've seen all have at least one whole lecture dedicated to data visualization. Where's yours?}
 Every lecture in this course is dedicated to data visualization! Okay, seriously, we'll cover the basics of \href{https://ggplot2.tidyverse.org/}{ggplot2} in the opening lecture (and first assignment) and consistently build upon that in subsequent weeks. Much as I'm tempted to have a standalone lecture on the topic, I have to triage because of the time constraints of a 10-week course. I don't want to run out of road before we can get to some of the big data stuff towards the end of the course. Trust me, though. There will be a \textit{lot} of data visualization in this course. 
 
 \vspace{-0.25cm}
@@ -238,7 +244,11 @@ Short answer: No. Longer answer: Look, I like and use a lot of those languages t
 
 \vspace{-0.25cm}
 \subsubsection*{I already have a BitBucket/GitLab/etc. account. Do I still have to use GitHub?}
-Since I'm running this course through GitHub education, yes. (But good for you! Seriously... those are great platforms too and as an open-source advocate, I fully support a plurality of tools and software options.)
+Since I'm running this course through GitHub Classroom, yes. But good for you! (Seriously... those are great platforms too and as an open-source advocate, I fully support a plurality of tools and software options.)
+
+\vspace{-0.25cm}
+\subsubsection*{On that note, do you have any advice for running a course on GitHub Classroom?}
+I mostly followed \href{https://github.com/jfiksel/github-classroom-for-teachers}{this excellent tutorial} by Jacob Fiksel.
 
 \vspace{-0.25cm}
 \subsubsection*{Remind me again: What exactly does this course have to do with \textit{environmental} economics?}
