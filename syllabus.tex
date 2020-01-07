@@ -59,7 +59,7 @@ anchorcolor = black]{hyperref}
 \begin{document}
 
 \title{Data science for economists \\(EC 607)}
-\subtitle{\textsc{Winter 2019 syllabus}\vspace{-2ex}}
+\subtitle{\textsc{Winter 2020 syllabus}\vspace{-2ex}}
 \author{Grant R. McDermott\\ Dept. of Economics, University of Oregon}
 %\date{}  % Toggle commenting to test
 \date{\vspace{-5ex}}
@@ -69,13 +69,13 @@ anchorcolor = black]{hyperref}
 \section*{Summary}
 
 \begin{tabular}{ll} 
-	\textbf{When:} & Mon \& Wed, 14:00--15:50 \\
+	\textbf{When:} & Tue \& Thu, 12:00--13:50 \\
 	\textbf{Where:} & PLC 410 \\
 	\textbf{Web:} & \href{https://github.com/uo-ec607}{https://github.com/uo-ec607} \\
 	\textbf{Who:} & Grant McDermott \\
 	& \, \faMortarBoard \, Assistant Professor of Economics \\
 	& \, \faEnvelopeO \, \href{mailto:grantmcd@uoregon.edu}{grantmcd@uoregon.edu} \\
-	& \, \faHourglassHalf \, Tue \& Thu, 09:00--10:00 (PLC 530) \\
+	& \, \faHourglassHalf \, Tue \& Thu, 16:00--17:00 (PLC 530) \\
 \end{tabular} 
 
 \section*{Course description}
@@ -103,7 +103,7 @@ Please make sure that you install the \textbf{RStudio IDE} too (download \href{h
 \vspace{-0.25cm}
 \subsubsection*{Git and GitHub Classroom}
 
-We will also make extensive use of the \textbf{Git} version control system (download \href{https://git-scm.com/downloads}{here}\footnote{Windows users, please make sure that you download \href{https://gitforwindows.org/}{Git for Windows} since that will come with Git Bash, which you'll need elsewhere in the course. More information \href{http://happygitwithr.com/install-git.html\#install-git-windows}{here}.}). Once you have installed Git, please create an account on \textbf{GitHub} (\href{https://github.com/join}{here}) and register for an education discount to get unlimited private repos (\href{https://education.github.com/discount_requests/new}{here}).\footnote{GitHub recently \href{https://blog.github.com/changelog/2019-01-08-pricing-changes/}{announced} unlimited free private repos for everyone. However, you are limited to three collaborators per private repo, so the education discount still makes sense.} Now is probably a good time to tell you that I am going to run the entire course through \href{https://classroom.github.com/}{GitHub Classroom}. You will receive an email invitation to the course repo with instructions in due time, but suffice it to say that this is how we'll submit assignments, provide feedback, receive grades, etc.
+We will also make extensive use of the \textbf{Git} version control system (follow the OS-specific instructions \href{http://happygitwithr.com/install-git.html}{here}). Once you have installed Git, please create an account on \textbf{GitHub} (\href{https://github.com/join}{here}) and register for an education discount to get unlimited private repos (\href{https://education.github.com/discount_requests/new}{here}).\footnote{GitHub recently \href{https://blog.github.com/changelog/2019-01-08-pricing-changes/}{announced} unlimited free private repos for everyone. However, you are limited to three collaborators per private repo, so the education discount still makes sense.} Now is probably a good time to tell you that I am going to run the entire course through \href{https://classroom.github.com/}{GitHub Classroom}. You will receive an email invitation to the course repo with instructions in due time, but suffice it to say that this is how we'll submit assignments, provide feedback, receive grades, etc.
 
 \vspace{-0.25cm}
 \subsubsection*{Other}
@@ -112,9 +112,9 @@ I will describe additional software requirements when the need arises. Lecture n
 
 \subsection*{Textbook and other readings}
 
-The nearest thing to a conventional textbook for this course is probably Garrett Grolemund and Hadley Wickham's ``\href{http://r4ds.had.co.nz}{\textbf{\textit{R} for Data Science}}''. I have ordered some copies at the Duck Store, but the book is available in its entirety for free online. I highly recommend this book for anyone who is interested in using \textit{R} for their research.\footnote{For those of you who prefer Python to \textit{R}, Jake VanderPlas's ``\href{https://jakevdp.github.io/PythonDataScienceHandbook/}{\textbf{Python Data Science Handbook}}'' is another excellent option.} Which, let's be honest, you should be. Only dinosaurs are using Stata now. (Don't tell the other professors. Actually, who am I kidding: TELL THEM.)
+The nearest thing to a conventional textbook for this course is probably Garrett Grolemund and Hadley Wickham's ``\href{http://r4ds.had.co.nz}{\textbf{\textit{R} for Data Science}}'' (R4DS). I have ordered some copies at the Duck Store, but the book is available in its entirety for free online. I highly recommend this book for anyone who is interested in using \textit{R} for their research.\footnote{For those of you who prefer Python to \textit{R}, Jake VanderPlas's ``\href{https://jakevdp.github.io/PythonDataScienceHandbook/}{\textbf{Python Data Science Handbook}}'' is another excellent option.} Which, let's be honest, you should be. Only dinosaurs are using Stata now. (Don't tell the other professors. Actually, who am I kidding: TELL THEM.)
 
-Other books that I eagerly recommend and will be drawing on occasionally include ``\href{http://adv-r.had.co.nz/}{\textbf{Advanced \textit{R}}}'' (Hadley Wickham, again), ``\href{http://socviz.co/}{\textbf{Data Visualization: A practical introduction}}'' (Kieran Healy), and ``\href{https://geocompr.robinlovelace.net/}{\textbf{Geocomputation with \textit{R}}}'' (Robin Lovelace, Jakub Nowosad and Jannes Muenchow). These books are all freely available online too. I may also refer you to the \href{http://stat545.com/topics.html}{\textbf{STAT 545 website}}, which is a course initially taught at UBC by Jenny Bryan and continues to serve as an incredible knowledge resource for all things related to \textit{R} and reproducible research. Finally, if we get enough time to take a deep dive into machine learning, then I'll be drawing from ``\href{https://web.stanford.edu/~hastie/ElemStatLearn/}{\textbf{The Elements of Statistical Learning}}'' (Trevor Hastie, Robert Tibshirani, and Jerome Friedman), which is a classic and (surprise!) also available as a free PDF online.
+In truth, R4DS will mostly cover the introductory parts of this course, Other books that I eagerly recommend and will be drawing on occasionally include ``\href{https://adv-r.hadley.nz/}{\textbf{Advanced \textit{R}}}'' (Hadley Wickham, again), ``\href{http://socviz.co/}{\textbf{Data Visualization: A practical introduction}}'' (Kieran Healy), and ``\href{https://geocompr.robinlovelace.net/}{\textbf{Geocomputation with \textit{R}}}'' (Robin Lovelace, Jakub Nowosad and Jannes Muenchow). These books are all freely available online too. I may also refer you to the \href{http://stat545.com/topics.html}{\textbf{STAT 545 website}}, which is a course initially taught at UBC by Jenny Bryan and continues to serve as an incredible knowledge resource for all things related to \textit{R} and reproducible research. Finally, if we get enough time to take a deep dive into machine learning, then I'll be drawing from ``\href{https://web.stanford.edu/~hastie/ElemStatLearn/}{\textbf{The Elements of Statistical Learning}}'' (Trevor Hastie, Robert Tibshirani, and Jerome Friedman), which is a classic and (surprise!) also available as a free PDF online.\footnote{A new book that I really like the look of is ``\href{https://bradleyboehmke.github.io/HOML/}{\textbf{Hands-On Machine Learning with \textit{R}}}'' (Boehmke and Greenwell).}
 
 Taking a step back, one of the goals of this course is to make you aware of the incredible array of instruction material that is freely available online. I also want to encourage you to be entrepreneurial. In that spirit, many of the lectures will follow a tutorial on someone's blog tutorial, or involve reproducing an existing study with open source tools. Each lecture will come with a set of recommended readings, which I expect you to at least look over before class.
 
@@ -136,13 +136,13 @@ Grades will be determined as follows:
 %		\midrule
 		5 \times homework assignments (15\% each)	& 75\% \\
 		2 \times short presentations (5\% each)		& 10\% \\
-		1 \times peer-review						& 10\% \\
+		1 \times OSS contribution					& 10\% \\
 		In-class participation						& 5\% \\
 		\bottomrule
 	\end{tabularx} 
 \end{table} 
 
-This breakdown should (hopefully) be pretty self-explanatory. Any specific requirements will be made clear as we proceed through the course. However, here are some additional details for \sout{pedants} people who like everything written down precisely:
+This breakdown should (hopefully) be pretty self-explanatory. Specific requirements will be made clear as we proceed through the course. Here are some additional details, though:
 
 \vspace{-0.25cm}
 \subsubsection*{Homework assignments (and/or final presentation)}
@@ -152,20 +152,24 @@ Homework assignments are to be completed individually. Late submissions will not
 \vspace{-0.25cm}
 \subsubsection*{Short presentations}
 
-Most lectures have one or more key readings; see the \nameref{sec:outline} at the end of this document. Each of you must give a short (5-10 min) summary presentation on at least one of these key readings. I say ``at least one'' because --- while you will need to give two short presentations in total --- you also have the option to present on an (approved) software package or tool of your choice.\footnote{I'll provide a list of some suggested packages and tools on the course repo.} Topics will be assigned on a first-come-first-go basis... But don't be surprised if I volunteer you for something.
+Almost every lecture will begin with a short student presentation. These should last 5--10 minutes and will cover a prescribed topic (i.e. that I have either allocated or approved ahead of time). Some presentations will involve summarising a key reading or topic of relevance to the main lecture for that day. Other presentations are a chance for you to describe a software package or analytical method of your choice --- again, subject to my approval. I will provide a list of slots, as well as prescribed and suggested topics via GitHub Classroom. Topics will be assigned on a first-come-first-go basis. But don't be surprised if I volunteer you for something.
+
+%Most lectures have one or more key readings; see the \nameref{sec:outline} at the end of this document. Each of you must give a short (5-10 min) summary presentation on at least one of these key readings. I say ``at least one'' because --- while you will need to give two short presentations in total --- you also have the option to present on an (approved) software package or tool of your choice.\footnote{I'll provide a list of some suggested packages and tools on the course repo.} Topics will be assigned on a first-come-first-go basis. But don't be surprised if I volunteer you for something.
 
 \vspace{-0.25cm}
-\subsubsection*{Peer-review}
+\subsubsection*{OSS contribution}
 
-You are going to peer-review (or reproduce) a study, project or software package. The focus here is on code and analysis, rather than framing or narrative issues. How exactly I expect you to do this will become clear after the first few lectures. The gist is that you will be using GitHub and related tools. (E.g. Cloning or forking a repo, identifying bugs or missing dependencies, issuing pull requests, and so forth. Again, these terms will make more sense once we cover them in class.) An approach that worked well last year --- but depends on demand for final presentations --- is that students reviewed each others' field papers. You could also choose to review any open-source project or repo, including \href{https://github.com/grantmcdermott?tab=repositories}{my own}. You will have 5 minutes to present your main findings/contributions and will also need to share any code changes/contributions with me.
+You are going to contribute to open-source software (OSS) in some way, shape, or form. This could be by identifying and correcting bugs in a package that you use. Or, it could be by contributing material (e.g. documentation) to an open-source project. This year, I particularly want to encourage you to contribute to the Library of Statistical Techniques (\url{https://lost-stats.github.io/}). There's clearly quite a bit of leeway here and I'll need to sign off on whatever you propose. Similarly, depending on the scope and size, you may need to make several different contributions to fulfill the requirement.
+
+%You are going to peer-review (or reproduce) a study, project or software package. The focus here is on code and analysis, rather than framing or narrative issues. How exactly I expect you to do this will become clear after the first few lectures. The gist is that you will be using GitHub and related tools. (E.g. Cloning or forking a repo, identifying bugs or missing dependencies, issuing pull requests, and so forth. Again, these terms will make more sense once we cover them in class.) An approach that worked well last year --- but depends on demand for final presentations --- is that students reviewed each others' field papers. You could also choose to review any open-source project or repo, including \href{https://github.com/grantmcdermott?tab=repositories}{my own}. You will have 5 minutes to present your main findings/contributions and will also need to share any code changes/contributions with me.
 
 \subsection*{Honesty and academic integrity}
 
-Students caught cheating or plagiarizing will automatically be assigned a zero grade. Please acquaint yourself with the Student Conduct Code at \href{http://studentlife.uoregon.edu}{http://studentlife.uoregon.edu}.
+Students caught cheating or plagiarizing will automatically be assigned a zero grade. Please acquaint yourself with the Student Conduct Code at \url{http://studentlife.uoregon.edu}.
 
 \subsection*{Accessibility}
 
-If you have a documented disability and anticipate needing accommodations in this course, please make arrangements with me during the first week of the term. Please request that the \href{https://aec.uoregon.edu/}{Accessible Education Center} send me a letter verifying your disability.
+If you have a documented disability and anticipate needing accommodations in this course, please make arrangements with me during the first week of the term. Please also request that the \href{https://aec.uoregon.edu/}{Accessible Education Center} send me a letter verifying your disability. Students with infants or young children that need ongoing care should similarly come and see to me. We'll have to take it on a case-by-case basis, but I'll do my utmost to accommodate you.
 
 \newpage
 \section*{Lecture outline}
@@ -201,9 +205,6 @@ If you have a documented disability and anticipate needing accommodations in thi
 \begin{enumerate}
 	\setcounter{enumi}{12}
 	\item Docker
-%	\begin{itemize}
-%		\item ``\href{http://ropenscilabs.github.io/r-docker-tutorial/}{\textit{R docker tutorial}}'' (rOpenSci Labs); ``\href{http://seankross.com/2017/09/17/Enough-Docker-to-be-Dangerous.html}{Enough Docker to be dangerous}'' (Sean Kross)
-%	\end{itemize}
 	\item Virtual machines / cloud servers (Google Compute Engine)
 	\item High performance computing (UO Talapas cluster) 
 	\item Databases: SQL(ite) and BigQuery
@@ -250,6 +251,6 @@ I mostly followed \href{https://github.com/jfiksel/github-classroom-for-teachers
 
 \vspace{-0.25cm}
 \subsubsection*{The UO course catalogue lists this class as an ``environmental economics'' seminar. Remind me again: What exactly does this course have to do with \textit{environmental} economics?}
-Good question. The truth is that this is really a data science tools course taught by an environmental economist. And the really truthful truth is that getting university approval for a new course --- with a different name --- is a bureaucratic nightmare, compared to just modifying an existing one off the shelf. Now, having said that, we \textit{will} be dealing with a lot of environmental datasets and topics. From energy and pollution data to fisheries to GIS and remote sensing products. These are the products and research themes that I am most familiar with and care most deeply about. The topics in this course are also genuinely representative of the tools that I use in my day-to-day research as an environmental economist. The good news that they are very easily adaptable to other fields.
+Good question. The truth is that this is really a data science tools course taught by an environmental economist. And the really truthful truth is that getting university approval for a new course --- with a different name --- is a bureaucratic nightmare, compared to just modifying an existing one off the shelf. Now, having said that, we \textit{will} be dealing with a lot of environmental datasets and topics. From energy and pollution data to GIS and remote sensing products. These are the products and research themes that I am most familiar with and care most deeply about. The topics in this course are also genuinely representative of the tools that I use in my day-to-day research as an environmental economist. The good news that they are very easily adaptable to other fields.
 
 \end{document}
