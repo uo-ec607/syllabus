@@ -103,12 +103,20 @@ Please make sure that you install the \textbf{RStudio IDE} too (download \href{h
 \vspace{-0.25cm}
 \subsubsection*{Git and GitHub Classroom}
 
-We will also make extensive use of the \textbf{Git} version control system (follow the OS-specific instructions \href{http://happygitwithr.com/install-git.html}{here}). Once you have installed Git, please create an account on \textbf{GitHub} (\href{https://github.com/join}{here}) and register for an education discount to get unlimited private repos (\href{https://education.github.com/discount_requests/new}{here}).\footnote{GitHub recently \href{https://blog.github.com/changelog/2019-01-08-pricing-changes/}{announced} unlimited free private repos for everyone. However, you are limited to three collaborators per private repo, so the education discount still makes sense.} Now is probably a good time to tell you that I am going to run the entire course through \href{https://classroom.github.com/}{GitHub Classroom}. You will receive an email invitation to the course repo with instructions in due time, but suffice it to say that this is how we'll submit assignments, provide feedback, receive grades, etc.
+We will also make extensive use of the \textbf{Git} version control system (follow the OS-specific installation instructions \href{http://happygitwithr.com/install-git.html}{here}). Once you have installed Git, please create an account on \textbf{GitHub} (\href{https://github.com/join}{here}) and register for an education discount to get unlimited private repos (\href{https://education.github.com/discount_requests/new}{here}).\footnote{GitHub recently \href{https://blog.github.com/changelog/2019-01-08-pricing-changes/}{announced} unlimited free private repos for everyone. However, you are limited to three collaborators per private repo, so the education discount still makes sense.} Now is probably a good time to tell you that I am going to run the entire course through \href{https://classroom.github.com/}{GitHub Classroom}. You will receive an email invitation to the course repo with instructions in due time, but suffice it to say that this is how we'll submit assignments, provide feedback, receive grades, etc.
 
 \vspace{-0.25cm}
 \subsubsection*{Other}
 
-I will describe additional software requirements when the need arises. Lecture notes will be posted ahead of time and list the \textit{R} packages and external libraries (if relevant) required for a particular class. Toward the latter half of the course, we'll be using various tools on the Google Cloud Platform, as well as making occasional use of other programming languages like SQL, Python and JavaScript.
+You are ready to start this course once you have installed R, RStudio, and Git (as well as created an account on GitHub). The last thing I want you to do for now is make sure that your system is configured to handle some additional packages that we will be using down the line. This varies by operating system:
+
+\begin{itemize}
+	\item \textbf{Linux:} You should be good to go. 
+	\item \textbf{Mac:} Install the \href{https://brew.sh/}{Homebrew} package manager. I also recommend that you make sure your C++ toolchain is configured/open; don't worry, it's simpler than it sounds (see \href{https://github.com/stan-dev/rstan/wiki/Installing-RStan-from-source-on-a-Mac#prerequisite--c-toolchain-and-configuration}{here}).
+	\item \textbf{Windows:} Install \href{https://cran.r-project.org/bin/windows/Rtools/}{Rtools}. While its not essential, I also recommend that you install the \href{https://chocolatey.org/}{Chocolatey} package manager for Windows.
+\end{itemize}
+
+I will provide instructions for any further software requirements as the need arises; i.e. when we get to the relevant lecture. On that note, the lectures have all been posted ahead of time on the \href{https://github.com/uo-ec607}{course website}. Each lecture lists all of the \textit{R} packages and external libraries (if relevant) required for a particular class. I'll try to remind you, but my expectation is that you will look at these requirements and ensure that you have them installed \textit{before} we start class. 
 
 \subsection*{Textbook and other readings}
 
@@ -134,11 +142,11 @@ Grades will be determined as follows:
 		\toprule
 %		\multicolumn{2}{c}{EC 607}  \\
 %		\midrule
-		5 \times homework assignments (15\% each)	& 75\% \\
+		4 \times homework assignments (20\% each)	& 80\% \\
 		2 \times short presentations (5\% each)		& 10\% \\
 		1 \times OSS contribution					& 10\% \\
-		In-class participation						& 5\% \\
 		\bottomrule
+		\multicolumn{2}{>{\hsize=\dimexpr1\hsize+6\tabcolsep}X}{\footnotesize Note: A class participation bonus worth an additional 2.5\% will be awarded at my discretion.}\\
 	\end{tabularx} 
 \end{table} 
 
