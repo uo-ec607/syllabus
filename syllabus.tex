@@ -9,10 +9,10 @@
 \setlength{\parskip}{10pt}
 \usepackage{titling}
 \newcommand{\subtitle}[1]{%
-	\posttitle{%
+	\posttitle{
 		\par\end{center}
 	\begin{center}\large#1\end{center}
-	\vskip0.5em}%
+	\vskip0.5em}
 }
 %% Change title format to be more compact
 %\usepackage{titling}
@@ -30,21 +30,16 @@
 %% FONTS
 \usepackage[normalem]{ulem} %% For strikeout font: \sout()
 \usepackage{lmodern}
-\usepackage{amssymb,amsmath}
-\usepackage{fontawesome}
+\usepackage{amssymb, amsmath}
 \usepackage{fontspec}
-% See: https://tex.stackexchange.com/a/50593
-%\setmainfont[ 
-%BoldFont       = texgyrepagella-bold.otf ,
-%ItalicFont     = texgyrepagella-italic.otf ,
-%BoldItalicFont = texgyrepagella-bolditalic.otf 
-%]{texgyrepagella-regular.otf}
-\setmainfont[
-BoldFont       = FiraSans-SemiBold.otf ,
-ItalicFont     = FiraSans-Italic.otf ,
-BoldItalicFont = FiraSans-SemiBoldItalic.otf 
-]{FiraSans-Regular.otf} %% /usr/share/texlive/texmf-dist/fonts/opentype/public/fira
-\setmonofont[Mapping=tex-text]{inconsolata}	
+% % See: https://tex.stackexchange.com/a/50593
+\setmainfont[]{Fira Sans}
+\setsansfont[]{Fira Sans}
+\setmonofont[]{Fira Mono}
+% \setmonofont[Mapping=tex-text]{inconsolata}	
+\defaultfontfeatures{
+    Path = /usr/share/texmf-dist/fonts/opentype/public/fontawesome/ }
+\usepackage{fontawesome} % Ditto
 
 %% MISC
 \usepackage[colorlinks = true,
@@ -59,7 +54,7 @@ anchorcolor = black]{hyperref}
 \begin{document}
 
 \title{Data science for economists \\(EC 607)}
-\subtitle{\textsc{Winter 2020 syllabus}\vspace{-2ex}}
+\subtitle{\textsc{Winter 2021 syllabus}\vspace{-2ex}}
 \author{Grant R. McDermott\\ Dept. of Economics, University of Oregon}
 %\date{}  % Toggle commenting to test
 \date{\vspace{-5ex}}
@@ -69,18 +64,19 @@ anchorcolor = black]{hyperref}
 \section*{Summary}
 
 \begin{tabular}{ll} 
-	\textbf{When:} & Tue \& Thu, 12:00--13:50 \\
-	\textbf{Where:} & PLC 410 \\
+	\textbf{When:} & Tue \& Thu, 10:15--11:45 \\
+	% \textbf{Where:} & PLC 410 \\
+	\textbf{Where:} & Remote! A Zoom link will be sent to you. \\
 	\textbf{Web:} & \href{https://github.com/uo-ec607}{https://github.com/uo-ec607} \\
 	\textbf{Who:} & Grant McDermott \\
 	& \, \faMortarBoard \, Assistant Professor of Economics \\
 	& \, \faEnvelopeO \, \href{mailto:grantmcd@uoregon.edu}{grantmcd@uoregon.edu} \\
-	& \, \faHourglassHalf \, Tue \& Thu, 14:00--15:00 (PLC 530) \\
+	& \, \faHourglassHalf \, Mon \& Wed, 09:00--10:30 \\
 \end{tabular} 
 
 \section*{Course description}
 
-This seminar is targeted at economics PhD students and will introduce you to the modern data science toolkit. While some material will likely overlap with your other quantitative and empirical methods courses, this is not just another econometrics course. Rather, my goal is bring you up to speed on the practical tools and techniques that I feel will most benefit your dissertation work and future research career. This includes many of the seemingly forgotten skills --- like where to find interesting data sets in the ``wild'' and how to actually clean them --- that are crucial to any successful scientific project, but are typically excluded from core econometrics and statistics classes. We will cover topics like version control and effective project management; programming; data acquisition (e.g. web-scraping), cleaning and visualization; GIS and remote sensing products; and tools for big data analysis (e.g. relational databases, cloud computation and machine learning). In short, we will cover things that I wish someone had taught me when I was starting out in graduate school. While the data sets and materials focus will predominantly link to environmental and natural resource issues (my own fields of specialisation), the tools and methods apply broadly. Students from other fields of specialisation are thus welcome to register.
+This seminar is targeted at economics PhD students and will introduce you to the modern data science toolkit. While some material will likely overlap with your other quantitative and empirical methods courses, this is not just another econometrics course. Rather, my goal is bring you up to speed on the practical tools and techniques that I feel will most benefit your dissertation work and future research career. This includes many of the seemingly forgotten skills --- like where to find interesting data sets in the ``wild'' and how to actually clean them --- that are crucial to any successful scientific project, but are typically excluded from core econometrics and statistics classes. We will cover topics like version control and effective project management; programming; data acquisition (e.g. web-scraping), cleaning and visualization; GIS and remote sensing products; and tools for big data analysis (e.g. relational databases, cloud computation and machine learning). In short, we will cover things that I wish someone had taught me when I was starting out in graduate school. %While the data sets and materials focus will predominantly link to environmental and natural resource issues (my own fields of specialisation), the tools and methods apply broadly. Students from other fields of specialisation are thus welcome to register.
 
 \newpage
 
@@ -88,7 +84,7 @@ This seminar is targeted at economics PhD students and will introduce you to the
 
 \subsection*{Class rules}
 
-Please bring your laptops to class. This will be a very hands-on course, with relatively little in the way of formal theory. Instead, we'll be working through lecture notes together in class and you'll be running code on your own machines. 
+\sout{Please bring your laptops to class. This will be a very hands-on course, with relatively little in the way of formal theory. Instead, we'll be working through lecture notes together in class and you'll be running code on your own machines.} \textbf{Update:} With COVID-19 pushing us to remote classes, I'll be changing how I teach this course. The most important change is that I'll be delivering lectures \textit{asynchronously}, essentially flipping the classroom. My expectation is that you'll watch and work through the pre-recorded lecture videos before class. We'll reserve actual class time for two things: 1) student presentations and 2) troubleshooting and follow-up from any of the lecture material. We may need to adapt as the quarter develops, but that's what we'll start out with and stay flexible.
 
 \subsection*{Software requirements}
 
@@ -103,7 +99,7 @@ Please make sure that you install the \textbf{RStudio IDE} too (download \href{h
 \vspace{-0.25cm}
 \subsubsection*{Git and GitHub Classroom}
 
-We will also make extensive use of the \textbf{Git} version control system (follow the OS-specific installation instructions \href{http://happygitwithr.com/install-git.html}{here}). Once you have installed Git, please create an account on \textbf{GitHub} (\href{https://github.com/join}{here}) and register for an education discount to get unlimited private repos (\href{https://education.github.com/discount_requests/new}{here}).\footnote{GitHub recently \href{https://blog.github.com/changelog/2019-01-08-pricing-changes/}{announced} unlimited free private repos for everyone. However, you are limited to three collaborators per private repo, so the education discount still makes sense.} Now is probably a good time to tell you that I am going to run the entire course through \href{https://classroom.github.com/}{GitHub Classroom}. You will receive an email invitation to the course repo with instructions in due time, but suffice it to say that this is how we'll submit assignments, provide feedback, receive grades, etc.
+We will also make extensive use of the \textbf{Git} version control system (follow the OS-specific installation instructions \href{http://happygitwithr.com/install-git.html}{here}). Once you have installed Git, please create an account on \textbf{GitHub} (\href{https://github.com/join}{here}) and register for an education discount to get unlimited private repos (\href{https://education.github.com/discount_requests/new}{here}).\footnote{GitHub recently \href{https://blog.github.com/changelog/2019-01-08-pricing-changes/}{announced} unlimited free private repos for everyone. However, you are limited to three collaborators per private repo, so the education discount still makes sense.} Now is probably a good time to tell you that I am going to run the course through \href{https://classroom.github.com/}{GitHub Classroom}. You will receive an email invitation to the course repo with instructions in due time, but suffice it to say that this is how we'll submit assignments, provide feedback, receive grades, etc.
 
 \vspace{-0.25cm}
 \subsubsection*{Other}
@@ -112,7 +108,7 @@ You are ready to start this course once you have installed R, RStudio, and Git (
 
 \begin{itemize}
 	\item \textbf{Linux:} You should be good to go. 
-	\item \textbf{Mac:} Install the \href{https://brew.sh/}{Homebrew} package manager. I also recommend that you make sure your C++ toolchain is configured/open; don't worry, it's simpler than it sounds (see \href{https://github.com/stan-dev/rstan/wiki/Installing-RStan-from-source-on-a-Mac#prerequisite--c-toolchain-and-configuration}{here}).
+	\item \textbf{Mac:} Install the \href{https://brew.sh/}{Homebrew} package manager. I also recommend that you make sure your C++ toolchain is configured/open. Don't worry, it's simpler than it sounds. Just download the \href{https://github.com/rmacoslib/r-macos-rtools#installer-package-for-macos-r-toolchain-}{macOS Rtools installer} and follow the instructions.
 	\item \textbf{Windows:} Install \href{https://cran.r-project.org/bin/windows/Rtools/}{Rtools}. While its not essential, I also recommend that you install the \href{https://chocolatey.org/}{Chocolatey} package manager for Windows.
 \end{itemize}
 
@@ -120,9 +116,21 @@ I will provide instructions for any further software requirements as the need ar
 
 \subsection*{Textbook and other readings}
 
-The nearest thing to a conventional textbook for this course is probably Garrett Grolemund and Hadley Wickham's ``\href{http://r4ds.had.co.nz}{\textbf{\textit{R} for Data Science}}'' (R4DS). I have ordered some copies at the Duck Store, but the book is available in its entirety for free online. I highly recommend this book for anyone who is interested in using \textit{R} for their research.\footnote{For those of you who prefer Python to \textit{R}, Jake VanderPlas's ``\href{https://jakevdp.github.io/PythonDataScienceHandbook/}{\textbf{Python Data Science Handbook}}'' is another excellent option.} Which, let's be honest, you should be. Only dinosaurs are using Stata now. (Don't tell the other professors. Actually, who am I kidding: TELL THEM.)
+There's no set textbook for this course (Ed Rubin and I are working on one). The lecture notes are pretty detailed and are thus ``self-contained''. However, I've drawn inspiration from various sources; a few of which are listed below. You don't \textit{need} to buy or read any of these (excellent) books to complete the course. But I can eagerly recommend leafing through at least one or two of them. Each of these books is freely available online if you can't afford a hard copy:
+%
+\begin{itemize}
+  \item ``\href{http://socviz.co/}{\textbf{Data Visualization: A practical introduction}}'' (Kieran Healy)
+	\item ``\href{http://r4ds.had.co.nz}{\textbf{\textit{R} for Data Science}}'' (Garrett Grolemund and Hadley Wickham)\footnote{FWIW, Jake VanderPlas's ``\href{https://jakevdp.github.io/PythonDataScienceHandbook/}{\textbf{Python Data Science Handbook}}'' is excellent option for anyone looking for a Python equivalent.}
+   \item ``\href{https://adv-r.hadley.nz/}{\textbf{Advanced \textit{R}}}'' (Hadley Wickham)
+   \item ``\href{https://geocompr.robinlovelace.net/}{\textbf{Geocomputation with \textit{R}}}'' (Robin Lovelace, Jakub Nowosad and Jannes Muenchow)
+   \item ``\href{https://keen-swartz-3146c4.netlify.app/}{\textbf{Spatial Data Science}}'' (Edzer Pebesma and Roger Bivand)
+   \item ``\href{https://statlearning.com}{\textbf{An Introduction to Statistical Learning}}'' (Gareth James, Daniela Witten, Trevor Hastie, and Robert Tibshirani)
+   \item Etc.
+\end{itemize}
 
-In truth, R4DS will mostly cover the introductory parts of this course, Other books that I eagerly recommend and will be drawing on occasionally include ``\href{https://adv-r.hadley.nz/}{\textbf{Advanced \textit{R}}}'' (Hadley Wickham, again), ``\href{http://socviz.co/}{\textbf{Data Visualization: A practical introduction}}'' (Kieran Healy), and ``\href{https://geocompr.robinlovelace.net/}{\textbf{Geocomputation with \textit{R}}}'' (Robin Lovelace, Jakub Nowosad and Jannes Muenchow). These books are all freely available online too. I may also refer you to the \href{http://stat545.com/topics.html}{\textbf{STAT 545 website}}, which is a course initially taught at UBC by Jenny Bryan and continues to serve as an incredible knowledge resource for all things related to \textit{R} and reproducible research. Finally, if we get enough time to take a deep dive into machine learning, then I'll be drawing from ``\href{https://web.stanford.edu/~hastie/ElemStatLearn/}{\textbf{The Elements of Statistical Learning}}'' (Trevor Hastie, Robert Tibshirani, and Jerome Friedman), which is a classic and (surprise!) also available as a free PDF online.\footnote{A new book that I really like the look of is ``\href{https://bradleyboehmke.github.io/HOML/}{\textbf{Hands-On Machine Learning with \textit{R}}}'' (Boehmke and Greenwell).}
+% The nearest thing to a conventional textbook for this course is probably Garrett Grolemund and Hadley Wickham's ``\href{http://r4ds.had.co.nz}{\textbf{\textit{R} for Data Science}}'' (R4DS). I have ordered some copies at the Duck Store, but the book is available in its entirety for free online. I highly recommend this book for anyone who is interested in using \textit{R} for their research.\footnote{For those of you who prefer Python to \textit{R}, Jake VanderPlas's ``\href{https://jakevdp.github.io/PythonDataScienceHandbook/}{\textbf{Python Data Science Handbook}}'' is another excellent option.} Which, let's be honest, you should be. %Only dinosaurs are using Stata now. (Don't tell the other professors. Actually, who am I kidding: TELL THEM.)
+% 
+% In truth, R4DS will mostly cover the introductory parts of this course, Other books that I eagerly recommend and will be drawing on occasionally include ``\href{https://adv-r.hadley.nz/}{\textbf{Advanced \textit{R}}}'' (Hadley Wickham, again), ``\href{http://socviz.co/}{\textbf{Data Visualization: A practical introduction}}'' (Kieran Healy), and ``\href{https://geocompr.robinlovelace.net/}{\textbf{Geocomputation with \textit{R}}}'' (Robin Lovelace, Jakub Nowosad and Jannes Muenchow). These books are all freely available online too. I may also refer you to the \href{http://stat545.com/topics.html}{\textbf{STAT 545 website}}, which is a course initially taught at UBC by Jenny Bryan and continues to serve as an incredible knowledge resource for all things related to \textit{R} and reproducible research. Finally, if we get enough time to take a deep dive into machine learning, then I'll be drawing from ``\href{https://web.stanford.edu/~hastie/ElemStatLearn/}{\textbf{The Elements of Statistical Learning}}'' (Trevor Hastie, Robert Tibshirani, and Jerome Friedman), which is a classic and (surprise!) also available as a free PDF online.\footnote{A new book that I really like the look of is ``\href{https://bradleyboehmke.github.io/HOML/}{\textbf{Hands-On Machine Learning with \textit{R}}}'' (Boehmke and Greenwell).}
 
 Taking a step back, one of the goals of this course is to make you aware of the incredible array of instruction material that is freely available online. I also want to encourage you to be entrepreneurial. In that spirit, many of the lectures will follow a tutorial on someone's blog tutorial, or involve reproducing an existing study with open source tools. Each lecture will come with a set of recommended readings, which I expect you to at least look over before class.
 
@@ -142,9 +150,9 @@ Grades will be determined as follows:
 		\toprule
 %		\multicolumn{2}{c}{EC 607}  \\
 %		\midrule
-		4 \times homework assignments (20\% each)	& 80\% \\
-		2 \times short presentations (5\% each)		& 10\% \\
-		1 \times OSS contribution					& 10\% \\
+		4 $\times$ homework assignments (20\% each)	& 80\% \\
+		1 $\times$ short presentations							& 10\% \\
+		1 $\times$ OSS contribution					& 10\% \\
 		\bottomrule
 		\multicolumn{2}{>{\hsize=\dimexpr1\hsize+6\tabcolsep}X}{\footnotesize Note: A class participation bonus worth an additional 2.5\% will be awarded at my discretion.}\\
 	\end{tabularx} 
@@ -167,7 +175,7 @@ Almost every lecture will begin with a short student presentation. These should 
 \vspace{-0.25cm}
 \subsubsection*{OSS contribution}
 
-You are going to contribute to open-source software (OSS) in some way, shape, or form. This could be by identifying and correcting bugs in a package that you use. Or, it could be by contributing material (e.g. documentation) to an open-source project. This year, I particularly want to encourage you to contribute to the Library of Statistical Techniques (\url{https://lost-stats.github.io/}). There's clearly quite a bit of leeway here and I'll need to sign off on whatever you propose. Similarly, depending on the scope and size, you may need to make several different contributions to fulfill the requirement.
+You are going to contribute to open-source software (OSS) in some way, shape, or form. This could be by identifying and correcting bugs in a package that you use. Or, it could be by contributing material (e.g. documentation) to an open-source project. I particularly want to encourage you to contribute to the Library of Statistical Techniques (\url{https://lost-stats.github.io/}). There's clearly quite a bit of leeway here and I'll need to sign off on whatever you propose. Similarly, depending on the scope and size, you may need to make several different contributions to fulfill the requirement.
 
 %You are going to peer-review (or reproduce) a study, project or software package. The focus here is on code and analysis, rather than framing or narrative issues. How exactly I expect you to do this will become clear after the first few lectures. The gist is that you will be using GitHub and related tools. (E.g. Cloning or forking a repo, identifying bugs or missing dependencies, issuing pull requests, and so forth. Again, these terms will make more sense once we cover them in class.) An approach that worked well last year --- but depends on demand for final presentations --- is that students reviewed each others' field papers. You could also choose to review any open-source project or repo, including \href{https://github.com/grantmcdermott?tab=repositories}{my own}. You will have 5 minutes to present your main findings/contributions and will also need to share any code changes/contributions with me.
 
@@ -192,7 +200,7 @@ If you have a documented disability and anticipate needing accommodations in thi
 	\item Version control with Git(Hub)
 	\item Learning to love the shell
 	\item \textit{R} language basics
-	\item Data cleaning and wrangling with the ``Tidyverse''
+	\item Data cleaning and wrangling: 1) tidyverse and 2) data.table
 	\item Webscraping: (1) Server-side and CSS
 	\item Webscraping: (2) Client-side and APIs
 \end{enumerate}
@@ -246,8 +254,8 @@ Sadly, no. I'm a Bayes fanboy (as my research interests will attest), but again 
 The obvious thing that springs to mind is workflow automation and analysis pipelines (make files, etc.). Again, triage rules the day. We will, however, be working extensively with R Markdown documents, which is at least a big step in the direction of self-contained analysis. And I'm more than happy to point students in the right direction if anyone wants to learn more. (\href{http://stat545.com/Classroom/notes/cm109.nb.html}{Here}, \href{https://ropenscilabs.github.io/drake-manual/index.html}{here}, and \href{https://web.stanford.edu/~gentzkow/research/CodeAndData.pdf}{here} are great places to start.) Another thing we won't have time for is package development and maintenance, although I don't see this class as the primary audience for that. OTOH, students will be rewarded for package contributions if they choose to do so in the peer-review section of the course. 
 
 \vspace{-0.25cm}
-\subsubsection*{\textit{R} looks cool, but I'm more familiar with Python/Julia/MatLab/etc. Can I use that instead?}
-Short answer: No. Longer answer: Look, I like and use a lot of those languages too, but I'm not changing my lecture notes or assignment templates for you. Plus, I really do think that \textit{R} makes the most sense for applied economists looking to develop their data science skills. It already has all of the statistics and econometrics support, and is amazingly adaptable as a ``glue'' language to other programming languages and APIs. Learning multiple languages is never a bad idea in the long run, though.
+\subsubsection*{\textit{R} looks cool, but I'm more familiar with Python/Julia/etc. Can I use that instead?}
+Short answer: No. Longer answer: Look, I like and use those languages too, but I'm not changing my lecture notes or assignment templates for you. Plus, I really do think that \textit{R} makes the most sense for applied economists looking to develop their data science skills. It already has all of the statistics and econometrics support, and is amazingly adaptable as a ``glue'' language to other programming languages and APIs. Learning multiple languages is never a bad idea in the long run, though.
 
 \vspace{-0.25cm}
 \subsubsection*{I already have a BitBucket/GitLab/etc. account. Do I still have to use GitHub?}
@@ -256,9 +264,5 @@ Since I'm running this course through GitHub Classroom, yes. But good for you! (
 \vspace{-0.25cm}
 \subsubsection*{On that note, do you have any advice for running a course on GitHub Classroom?}
 I mostly followed \href{https://github.com/jfiksel/github-classroom-for-teachers}{this excellent tutorial} by Jacob Fiksel.
-
-\vspace{-0.25cm}
-\subsubsection*{The UO course catalogue lists this class as an ``environmental economics'' seminar. Remind me again: What exactly does this course have to do with \textit{environmental} economics?}
-Good question. The truth is that this is really a data science tools course taught by an environmental economist. And the really truthful truth is that getting university approval for a new course --- with a different name --- is a bureaucratic nightmare, compared to just modifying an existing one off the shelf. Now, having said that, we \textit{will} be dealing with a lot of environmental datasets and topics. From energy and pollution data to GIS and remote sensing products. These are the products and research themes that I am most familiar with and care most deeply about. The topics in this course are also genuinely representative of the tools that I use in my day-to-day research as an environmental economist. The good news that they are very easily adaptable to other fields.
 
 \end{document}
